@@ -841,7 +841,9 @@ function showScores(){
   } else
   if (mode === "survival") {
     document.getElementById("pwinText").innerHTML = survivalScore;
-    if (survivalScore > survivalHighScore || survivalHighScore === null) {
+    if (survivalScore === 0){
+      document.getElementById("partyText").innerHTML = "Ouch";
+    } else if (survivalScore > survivalHighScore || survivalHighScore === null) {
       document.getElementById("partyText").innerHTML = "New high score!";
       localStorage.setItem("highscore", survivalScore);
       survivalHighScore = survivalScore
