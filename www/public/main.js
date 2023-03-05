@@ -428,7 +428,9 @@ function  joinGame() {
     document.getElementById("gameStartSurvival").style.display = "block"; 
     document.getElementById("sinstructions").style.display = "block";
     document.getElementById("toggleMute").style.display = "block";
-    console.log(mode)
+    if (survivalHighScore > 0){
+      document.getElementById("showCurrentHighScore").innerHTML = "High score: "+survivalHighScore
+    }
   }
   shuffle(flags);
   };

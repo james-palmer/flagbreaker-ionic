@@ -340,6 +340,14 @@ width: 100vw;;
   border: white solid 1px;
 }
 
+#showCurrentHighScore{
+  position: fixed;
+  top: 25px;
+  right: 35px;
+  padding:  env(safe-area-inset-top) env(safe-area-inset-right) env(
+    safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
 .no-padding {
   padding:  env(safe-area-inset-top) env(safe-area-inset-right) env(
     safe-area-inset-bottom) env(safe-area-inset-left);
