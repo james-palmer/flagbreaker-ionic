@@ -217,6 +217,35 @@ Welcome splash screen
 
 </section>
          
+<section id="gameStartSurvival" style="display:none">
+  <div class="" id="sScore">
+    <span id="currentSurvivalScore"></span>
+  </div>
+  <div class="flagholder-party d-grid">
+      <div id="sinstructions">  
+          <div class="d-grid">
+            <div style="text-align: center"; >
+              <p>Guess as many flags correctly as you can</p>
+            </div>
+            <button class="splashButtons" id="sgameStart" onclick=gameStartSurvival() style="margin-top: 0px;">Start Flagbreaker</button>
+        </div>
+      </div>
+          <img id="sflag" class="gameImg"  style="display:none" src="">
+          <button onclick="resetGame()" id="survivalBack" class="btn backButton"><i class="fa fa-arrow-left"></i></button>
+  </div>
+  <div class="row" >
+      <div class="col-6 bottom no-padding">
+          <button id="s1" class="gameButtons" disabled></button>
+          <button id="s2" class="gameButtons" disabled></button>
+      </div>
+      <div class="col-6 bottom right no-padding">
+          <button id="s3" class="gameButtons" disabled></button>
+          <button id="s4" class="gameButtons" disabled></button>
+      </div>
+  </div>
+
+</section>
+
 <!-- End round splash page -->  
 <section id="roundEnd" style="display:none">
     <div id="confetti"  style="z-index: 100000; display: none; width:100vw; height: 100vh; position: fixed; top: 0; left:0;"></div>
@@ -244,13 +273,13 @@ Welcome splash screen
   <div class="container">
     <div class="row">
       <p id="pendScore" class="showScore">
-        You scored <span id="pwinText"></span>/10
+        You scored <span id="pwinText"></span>
           <br>
-        <span id="partyText">Well done</span></p>
+        <span id="partyText"></span></p>
         </div>
       </div>
        <button id="endSplashButtonParty" style="display: none" onclick=resetGame() class="endsplashButton splashButtons vertical-center">Play again</button>
-       <p id="pBruce" class="showBruce"></p>
+       <!-- <p id="pBruce" class="showBruce"></p> -->
       </div>
 </section>
      
